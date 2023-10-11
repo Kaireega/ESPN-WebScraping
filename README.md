@@ -12,4 +12,8 @@ This script is responsible for grabbing the headers (excluding 'POS') for the st
 
 
 #main.py
-The main script that orchestrates the scraping process for all links and manages the overall flow of the program.
+The main script that orchestrates all links and manages the overall flow of the program.
+change "webdriver_path" to your path
+
+
+
