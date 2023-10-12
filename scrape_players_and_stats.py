@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from passing_ml import *
 from scrape_header import *
 from week_finder import *
+from get_url import *
 import time
 
 
@@ -55,8 +56,8 @@ def scrape_players_and_stats(driver, url, webdriver_path,name,name2, name3):
                 grouped_stats_dict[header[header_index]].append([player_stat])         
             else:
                 grouped_stats_dict[header[header_index]].append([player_stat])
-                
-        if url == 'https://www.espn.com/college-football/stats/player':
+        urls=get_url()    
+        if url == urls[0]:
             passing_ml(get_college_football_week(),players,schools,grouped_stats_dict,name,name2, name3)
         
 
