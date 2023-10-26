@@ -1,20 +1,7 @@
-# ESPN-WebScraping
+# GitHub Codespaces ♥️ Jupyter Notebooks
 
-#scrape_players_ans_stats.py
-This script is responsible for scraping player statistics and organizing them into a dictionary. It will handle each link and extract player stats based on a predefined structure.
-(The graph that will be made for each link will been done the same way as we do the DB)
+Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
 
-If we were to add a DB, we will make it in a new file. "scrape_players_ad_stats.py" has the ability to upload the data from the dictionary that was created. This gives us control of each of the stats for each player where the player index = key value index. The key is equivalent to the header on each link. 
-We create a key called 'POS' given it is not counted as a header but returns its key value back.
+You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
 
-#scrape_header.py
-This script is responsible for grabbing the headers (excluding 'POS') for the stats from a source. It could be used to obtain the column names for the statistics.
-
-
-#main.py
-The main script that orchestrates all links and manages the overall flow of the program.
-change "webdriver_path" to your path
-
-
-#controller 
-Takes users input
+Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
