@@ -1,11 +1,9 @@
 import csv
 
 def UpdateCSV(players,schools,grouped_stats_dict,csv_file_path):
-        
-
-        # Create a list to store the data that will be written to the CSV file
+       # Create a list to store the data that will be written to the CSV file
         csv_data = []
-
+        
         # Iterate through each name in the list
         for i, player in enumerate(players):
             row = {
