@@ -18,9 +18,9 @@ def setDriver():
        
         driver = webdriver.Chrome()
         try:
-                #for url in urls:
-                #        driver.get(url)
-                #        scrape_players_and_stats(driver, url, webdriver_path)
+                for url in urls:
+                        driver.get(url)
+                        scrape_players_and_stats(driver, url, webdriver_path)
                 
                 for url in vs_url:
                         driver.get(url)

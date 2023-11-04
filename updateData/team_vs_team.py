@@ -18,6 +18,6 @@ def team_vs_team(driver, url, webdriver_path):
     
     for i in range (0,len(urls)):
         if url==urls[i]:
-            name=f"/espn/data/week{i}.csv"
+            name=f"data/week{i}.csv"
             UpdateWeekCSV(header,name)
    
