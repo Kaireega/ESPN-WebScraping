@@ -36,7 +36,7 @@ def scrape_players_and_stats(driver, url, webdriver_path):
     schools = [tag_s.get_text() for tag_s in school_tags]
     # Scrape player stats
     tbody_elements = soup.find_all(class_='Table__TBODY')
-    header=scrape_header(driver)
+    header=scrape_header(driver,"p")
 
     if len(tbody_elements) >= 2:
         second_players_chart = tbody_elements[1]
@@ -57,25 +57,25 @@ def scrape_players_and_stats(driver, url, webdriver_path):
                 grouped_stats_dict[header[header_index]].append([player_stat])         
             else:
                 grouped_stats_dict[header[header_index]].append([player_stat])
-
-    urls=get_url()    
+    
+    #saving player data to csv
+    urls=get_url() 
+    
     if url == urls[0]:
-        name="data/passing.csv"
-        UpdateCSV(players,schools,grouped_stats_dict,name)
-        
+            name="data/passing.csv"
+            UpdateCSV(players,schools,grouped_stats_dict,name)
+            
     elif url == urls[1]:
-        name="data/rushing.csv"
-        UpdateCSV(players,schools,grouped_stats_dict,name)
+            name="data/rushing.csv"
+            UpdateCSV(players,schools,grouped_stats_dict,name)
+            
         
-    
     elif url == urls[2]:
-        name="data/receiving.csv"
-        UpdateCSV(players,schools,grouped_stats_dict,name)
+            name="data/receiving.csv"
+            UpdateCSV(players,schools,grouped_stats_dict,name)
+            
         
-    
     elif url == urls[3]:
-        name="data/defense.csv" 
-        UpdateCSV(players,schools,grouped_stats_dict,name)
-   
-    else: print("url not found")
-                
+            name="data/defense.csv" 
+            UpdateCSV(players,schools,grouped_stats_dict,name)
+    
