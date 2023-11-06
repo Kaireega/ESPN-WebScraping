@@ -8,9 +8,9 @@ def UpdateCSV(players, schools, grouped_stats_dict, csv_file_path):
         # Iterate through each name in the list
         for i, player in enumerate(players):
             # Remove square brackets, double quotation marks, and spaces from the player name
-            player = player.replace('[', '').replace(']', '').replace('"', '').replace(' ', '')
+            player = player.replace('[', '').replace(']', '').replace('"', '')
             # Remove square brackets, double quotation marks, and spaces from the school name
-            school = schools[i].replace('[', '').replace(']', '').replace('"', '').replace(' ', '')
+            school = schools[i].replace('[', '').replace(']', '').replace('"', '').replace("'",'')
             row = {
                 "Player": player,
                 "School": school
@@ -19,7 +19,7 @@ def UpdateCSV(players, schools, grouped_stats_dict, csv_file_path):
             # Iterate through each key-value pair in the dictionary
             for key, value in grouped_stats_dict.items():
                 # Remove square brackets, double quotation marks, and spaces from the values
-                cleaned_value = str(value[i]).replace('[', '').replace(']', '').replace('"', '').replace(' ', '')
+                cleaned_value = str(value[i]).replace('[', '').replace(']', '').replace('"', '').replace(' ', '').replace("'",'').replace(",",'')
                 row[key] = cleaned_value
 
             csv_data.append(row)
