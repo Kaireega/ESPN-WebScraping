@@ -1,7 +1,7 @@
 # ESPN Data and Visual Analytics
-# DESCRIPTION
-# INSTALLATION
-# EXECUTION
+# DESCRIPTION *
+# INSTALLATION *
+# EXECUTION *
 # Team Members
 - Tyon Davis
 - Kairee Gay
