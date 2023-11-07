@@ -3,7 +3,7 @@
 # INSTALLATION *
 # EXECUTION *
 # TESTBED
- Run the ESPN.football.ipynb file 
+ View the ESPN.football.ipynb file 
  # Questions that can be answered from the testbed
 # Team Members
 - Tyon Davis
